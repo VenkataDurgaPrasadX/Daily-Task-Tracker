@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Task Manager</h1>
+
+    <!-- Countdown Timer -->
+  <div id="countdown" style="text-align:center; font-size: 20px; margin-bottom: 15px; color: #1565c0; font-weight: bold;">
+    ⏳ Countdown: -- : -- : --
+  </div>
+  <div id="countdown-box">
+  <div id="countdown-title">⏳ Time Left Today</div>
+  <div id="countdown-timer">
+    <span id="hrs">--</span> <small>hrs</small> :
+    <span id="mins">--</span> <small>mins</small> :
+    <span id="secs">--</span> <small>secs</small>
+  </div>
+</div>
+
+  
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Enter a task..." required />
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
